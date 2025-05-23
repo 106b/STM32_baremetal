@@ -1,0 +1,161 @@
+
+Discarded input sections
+
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .group         0x00000000        0xc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .text          0x00000000        0x0 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .data          0x00000000        0x0 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .bss           0x00000000        0x0 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x08000000         0x00200000         xr
+sram             0x20000000         0x00030000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+LOAD /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard/libgcc.a
+                0x20030000                        _estack = (ORIGIN (sram) + LENGTH (sram))
+
+.vectors        0x08000000      0x1ac
+ *(.vectors)
+ .vectors       0x08000000      0x1ac /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+                0x08000000                tab
+
+.text           0x080001ac      0x1a0
+ *(.text*)
+ .text.gpio_set_mode
+                0x080001ac       0x38 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .text.SysTick_Handler
+                0x080001e4       0x10 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+                0x080001e4                SysTick_Handler
+ .text.gpio_set_af.constprop.0
+                0x080001f4       0x30 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .text.timer_expired
+                0x08000224       0x26 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+                0x08000224                timer_expired
+ *fill*         0x0800024a        0x2 
+ .text.startup.main
+                0x0800024c       0xc4 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+                0x0800024c                main
+ .text._reset   0x08000310       0x3c /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+                0x08000310                _reset
+
+.glue_7         0x0800034c        0x0
+ .glue_7        0x0800034c        0x0 linker stubs
+
+.glue_7t        0x0800034c        0x0
+ .glue_7t       0x0800034c        0x0 linker stubs
+
+.vfp11_veneer   0x0800034c        0x0
+ .vfp11_veneer  0x0800034c        0x0 linker stubs
+
+.v4_bx          0x0800034c        0x0
+ .v4_bx         0x0800034c        0x0 linker stubs
+
+.iplt           0x0800034c        0x0
+ .iplt          0x0800034c        0x0 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+.rodata         0x0800034c        0x5
+ *(.rodata*)
+ .rodata.main.str1.1
+                0x0800034c        0x5 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+.rel.dyn        0x08000354        0x0
+ .rel.iplt      0x08000354        0x0 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+.data           0x20000000        0x0 load address 0x08000351
+                0x20000000                        _sdata = .
+ *(.first_data)
+ *(.data SORT_BY_NAME(.data.*))
+                0x20000000                        _edata = .
+                0x08000351                        _sidata = LOADADDR (.data)
+
+.igot.plt       0x20000000        0x0 load address 0x08000351
+ .igot.plt      0x20000000        0x0 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+.bss            0x20000000        0x8 load address 0x08000351
+                0x20000000                        _sbss = .
+ *(.bss SORT_BY_NAME(.bss.*) COMMON)
+ .bss.on.0      0x20000000        0x1 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ *fill*         0x20000001        0x3 
+ .bss.s_ticks   0x20000004        0x4 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+                0x20000008                        _ebss = .
+                0x20000008                        . = ALIGN (0x8)
+                0x20000008                        _end = .
+OUTPUT(firmware.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000      0x8e9
+ .debug_info    0x00000000      0x8e9 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+.debug_abbrev   0x00000000      0x355
+ .debug_abbrev  0x00000000      0x355 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+.debug_loclists
+                0x00000000      0x2ef
+ .debug_loclists
+                0x00000000      0x2ef /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+.debug_aranges  0x00000000       0x48
+ .debug_aranges
+                0x00000000       0x48 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+.debug_rnglists
+                0x00000000       0x89
+ .debug_rnglists
+                0x00000000       0x89 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+.debug_macro    0x00000000     0x174e
+ .debug_macro   0x00000000      0x103 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00000103      0xacc /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00000bcf       0x22 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00000bf1       0x5b /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00000c4c       0x2a /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00000c76       0x94 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00000d0a       0x43 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00000d4d      0x103 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00000e50       0x3a /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00000e8a       0x57 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00000ee1       0x6a /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00000f4b      0x1df /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x0000112a       0x89 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x000011b3      0x460 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00001613       0x22 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+ .debug_macro   0x00001635      0x119 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+.debug_line     0x00000000      0x5e8
+ .debug_line    0x00000000      0x5e8 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+.debug_str      0x00000000     0x5657
+ .debug_str     0x00000000     0x5657 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+                               0x5873 (size before relaxing)
+
+.comment        0x00000000       0x45
+ .comment       0x00000000       0x45 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+                                 0x46 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x34
+ .ARM.attributes
+                0x00000000       0x34 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
+
+.debug_frame    0x00000000       0x90
+ .debug_frame   0x00000000       0x90 /var/folders/nc/3087_0q54mv_css8v32nnvy40000gn/T//cc5aKAGQ.o
